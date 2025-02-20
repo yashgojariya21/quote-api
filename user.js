@@ -12,6 +12,8 @@ app.get("/", (req, res) => {
     res.send("home page")
 })
 
+app.use("/user", user_router);
+
 app.use("/register", user_router);
 
 app.listen(PORT, () => {

@@ -1,7 +1,5 @@
 const user = require("../models/user_schema");
 
-
-
 const login = async (req, res) => {
     const { first_name, last_name, email, password, confirm_password } = req.body;
     if (!first_name || !last_name || !email || !password || !confirm_password) {
@@ -52,7 +50,20 @@ const login = async (req, res) => {
             }
         })
     }
-
 }
 
-module.exports = login;
+const data = async (req, res) => {
+    try {
+        const getData = await user.find({});
+        res.status(200).json({
+            message: "Data fetched successfully",
+            status: 200,
+            data: getData
+        });
+    } catch (error) {
+        console.log(error);
+
+    }
+}
+
+module.exports = { login, data };
