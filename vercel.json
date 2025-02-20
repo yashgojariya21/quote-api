@@ -11,11 +11,5 @@
       "src": "/(.*)",
       "dest": "user.js"
     }
-  ],
-  "functions": {
-    "api/*.js": {
-      "maxDuration": 15,
-      "memory": 512
-    }
-  }
+  ]
 }
