@@ -9,7 +9,7 @@ const user_router = require("./routes/user")
 app.use(express.json());
 
 app.get("/", (req, res) => {
-    res.send("home page")
+    res.send("Login Api page")
 })
 
 app.use("/user", user_router);
