@@ -14,7 +14,8 @@
   ],
   "functions": {
     "api/*.js": {
-      "maxDuration": 15
+      "maxDuration": 15,
+      "memory": 512
     }
   }
 }
