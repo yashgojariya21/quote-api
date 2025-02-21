@@ -22,7 +22,8 @@ app.get("/", (req, res) => {
 
 app.use("/register", user_router);
 
-app.use("/data", async (req, res) => {
+
+app.get("/data", async (req, res) => {
     try {
         const getData = await user.find({});
         res.status(200).json({
