@@ -26,7 +26,7 @@ app.use("/register", user_router);
 app.get("/data", async (req, res) => {
     try {
         const getData = await user.find({});
-        res.status(200).json({
+        return res.status(200).json({
             message: "Data fetched successfully",
             status: 200,
             data: getData
