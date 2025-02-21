@@ -10,7 +10,7 @@
     {
       "src": "/(.*)",
       "dest": "user.js",
-      "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"]
+      "methods": ["GET", "POST", "OPTIONS"]
     }
   ]
 }
