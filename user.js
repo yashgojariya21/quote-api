@@ -12,7 +12,7 @@ let app = express();
 
 const PORT = process.env.PORT || 7000;
 const user = require("./models/user_schema");
-const user_router = require("./routes/user")
+const user_router = require("./routes/user_routes")
 
 app.use(express.json());
 
