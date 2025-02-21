@@ -1,12 +1,12 @@
 const express = require("express");
-// const cors = require("cors");
+const cors = require("cors");
 // const corsConfig = {
 //     origin: "*",
 //     credential: true,
 //     methods: ["GET", "POST"],
 // };
 // app.options("", cors(corsConfig))
-// app.use(cors(corsConfig))
+app.use(cors(corsConfig))
 const app = express();
 require("./db/db")
 
