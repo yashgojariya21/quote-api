@@ -12,8 +12,6 @@ app.get("/", (req, res) => {
     res.send("Login Api page")
 })
 
-app.use("/user", user_router);
-
 app.use("/register", user_router);
 
 app.listen(PORT, () => {
