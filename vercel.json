@@ -8,9 +8,13 @@
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "user.js",
+      "src": "/",
+      "dest": "/",
       "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"]
+    },
+    {
+      "src": "/register",
+      "dest": "/"
     }
   ]
 }
