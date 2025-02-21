@@ -1,4 +1,5 @@
 const express = require("express");
+let app = express();
 const cors = require("cors");
 const corsConfig = {
     origin: "*",
@@ -7,7 +8,6 @@ const corsConfig = {
 };
 app.options("", cors(corsConfig))
 app.use(cors(corsConfig))
-const app = express();
 require("./db/db")
 
 const PORT = process.env.PORT || 7000;
