@@ -11,7 +11,7 @@ require("./db/db")
 let app = express();
 
 const PORT = process.env.PORT || 7000;
-const user = require("../models/user_schema");
+const user = require("./models/user_schema");
 const user_router = require("./routes/user")
 
 app.use(express.json());
